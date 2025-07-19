@@ -9,7 +9,7 @@ function Dashboard() {
     const fetchForms = async () => {
       try {
         const token = localStorage.getItem("token");
-        const res = await axios.get("http://localhost:5000/api/forms/admin/all", {
+        const res = await axios.get("https://feedback-grus.onrender.com/api/forms/admin/all", {
           headers: { Authorization: `Bearer ${token}` },
         });
         setForms(res.data);
