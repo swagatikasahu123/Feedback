@@ -33,7 +33,7 @@ function CreateForm() {
     try {
       const token = localStorage.getItem("token");
       const res = await axios.post(
-        "http://localhost:5000/api/forms/create",
+        "https://feedback-grus.onrender.com/api/forms/create",
         { title, questions },
         { headers: { Authorization: `Bearer ${token}` } }
       );
