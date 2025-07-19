@@ -10,7 +10,7 @@ function ViewResponses() {
   useEffect(() => {
     const fetchResponses = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/responses/form/${formId}`);
+        const res = await axios.get(`https://feedback-grus.onrender.com/api/responses/form/${formId}`);
         setResponses(res.data);
       } catch (err) {
         alert("Error fetching responses");
